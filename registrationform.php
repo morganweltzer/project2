@@ -11,14 +11,14 @@
   </script>
 </head>
 <body>
-  <h1>A Simple login form, WAPH</h1>
+  <h1>Registration Form</h1>
   <h2>Morgan Weltzer</h2>
   <div id="digit-clock"></div>  
 <?php
   //some code here
   echo "Visited time: " . date("Y-m-d h:i:sa")
 ?>
-  <form action="index.php" method="POST" class="form login">
+  <form action="addnewuser.php" method="POST" class="form login">
     Username:<input type="text" class="text_field" name="username" /> <br>
     Password: <input type="password" class="text_field" name="password" /> <br>
     <button class="button" type="submit">Login</button>
