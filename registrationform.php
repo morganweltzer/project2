@@ -6,23 +6,10 @@
   <title>WAPH-Login page</title>
 </head>
 <body>
-<?php
-?>
-  <!-- <form action="addnewuser.php" method="POST" class="form login">
-    Username:<input type="text" class="text_field" name="username" /> <br>
-    Password: <input type="password" class="text_field" name="password" /> <br>
-    <button class="button" type="submit">Login</button>
-  </form> -->
-</body>
-</html>
 
 <div class="formbold-main-wrapper">
-  <!-- Open source registration form template by FormBold -->
-  <!-- Author: FormBold Team -->
-  <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
-    <!-- <form action="https://formbold.com/s/FORM_ID" method="POST"> -->
-    <form action="addnewuser.php" method="POST"> <!-- Use POST method to match the PHP script -->
+    <form action="addnewuser.php" method="POST">
       <div class="formbold-form-title">
         <h2 class="">Register now</h2>
         <p>
@@ -40,6 +27,7 @@
             name="firstname"
             id="firstname"
             class="formbold-form-input"
+            required
           />
         </div>
         <div>
@@ -49,6 +37,7 @@
             name="lastname"
             id="lastname"
             class="formbold-form-input"
+            required
           />
         </div>
       </div>
@@ -61,6 +50,7 @@
             name="email"
             id="email"
             class="formbold-form-input"
+            required
           />
         </div>
         <div>
@@ -70,6 +60,7 @@
             name="phone"
             id="phone"
             class="formbold-form-input"
+            required
           />
         </div>
       </div>
@@ -83,6 +74,7 @@
           name="username"
           id="username"
           class="formbold-form-input"
+          required
         />
       </div>
 
@@ -91,13 +83,17 @@
           Password
         </label>
         <input
-          type="text"
+          type="password"
           name="password"
           id="password"
           class="formbold-form-input"
+          required
         />
       </div>
       <button class="formbold-btn">Register Now</button>
     </form>
   </div>
 </div>
+
+</body>
+</html>
