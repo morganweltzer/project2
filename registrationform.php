@@ -22,7 +22,7 @@
   <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
     <!-- <form action="https://formbold.com/s/FORM_ID" method="POST"> -->
-      <form action="addnewuser.php" method="POST">
+    <form action="addnewuser.php" method="POST"> <!-- Use POST method to match the PHP script -->
       <div class="formbold-form-title">
         <h2 class="">Register now</h2>
         <p>
