@@ -1,12 +1,10 @@
-<?php 
-	session_start();
-	session_destroy();
-
-/*
-	<h2>You are logged out!</h2>
-	<a href="index.html">Login again</a>
-*/
+<?php
+// Ensure no session data is left
+session_start();
+session_unset();
+session_destroy();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,38 +21,36 @@
             height: 100vh;
             margin: 0;
         }
-
         .container {
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
             text-align: center;
         }
-
-        h2 {
+        h1 {
             color: #333;
-            margin-bottom: 20px;
         }
-
-        a {
-            color: #007bff;
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
             text-decoration: none;
             font-size: 16px;
+            margin-top: 10px;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>You are logged out!</h2>
-    <a href="index.html">Login again</a>
+    <h1>You have been successfully logged out.</h1>
+    <a href="userlogin.php" class="button">Login Again</a>
 </div>
 
 </body>

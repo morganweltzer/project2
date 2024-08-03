@@ -7,9 +7,10 @@ USE weltzeme;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS superusers;
 
--- Create users table
+-- Create users table with an auto-incrementing id
 CREATE TABLE users (
-    username VARCHAR(50) PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,         -- Auto-incrementing primary key
+    username VARCHAR(50) UNIQUE NOT NULL,      -- Unique username
     password VARCHAR(100) NOT NULL,
     firstname VARCHAR(100),
     lastname VARCHAR(100),
