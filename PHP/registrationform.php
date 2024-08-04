@@ -156,7 +156,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password !== confirmPassword) {
             hint.style.display = 'block';
             return false;
-        } else {
+        }
+         else {
             hint.style.display = 'none';
         }
 

@@ -4,7 +4,7 @@ require('authentication.php');
 session_start();
 
 if (!isset($_SESSION['userId'])) {
-    header("Location: login.php");
+    header("Location: userlogin.php");
     exit();
 }
 

@@ -3,6 +3,7 @@
   header("Cache-Control: post-check=0, pre-check=0", false);
   header("Pragma: no-cache");
   require('authentication.php');
+  
   if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] != TRUE) {
       session_destroy();
       header("Location: userlogin.php");
